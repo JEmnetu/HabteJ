@@ -1,0 +1,138 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    font-family: Avenir;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+
+    padding: 10px;
+    background: black;
+    color: white;
+    width: 100vw;
+    text-align: center;
+}
+
+#brand{
+    font-size: 1.5em;
+    margin-left: 2em;
+}
+
+#myPic{
+    height: 200px;
+    width: 250px;
+    border-radius:8em;
+}
+
+#img-wrapper{
+    margin-top: 2em;
+    margin-bottom: 6em;
+}
+
+#About{
+height: 100vh;
+}
+
+#Skills{
+    height: 100vh;
+}
+.skills-wrapper{
+    /*height: 50%;*/
+    padding-top: 7em;
+}
+
+.projects-wrapper{
+    padding-top: 0em;
+
+}
+
+.list-title{
+    font-weight: bold;
+    list-style: none;
+    text-decoration: underline;
+}
+
+#Projects{
+height: auto;
+}
+
+#social-media ul{
+list-style: none;
+    text-align: center;
+}
+
+#social-media li{
+    display: inline-block;
+    list-style: none;
+   margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+.card li{
+    display: inline-block;
+
+}
+
+.card ul{
+    list-style: none;
+
+}
+
+
+
+
+
+/*.nav{*/
+/*    background: cornflowerblue;*/
+/*    height: auto;*/
+/*    padding: 20px;*/
+/*    */
+/*}*/
+header{
+    background-color: cornflowerblue;
+    padding: 20px;
+    height: auto;
+    box-sizing: border-box;
+    /*position: sticky;*/
+    /*top: 0;*/
+
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.card img{
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.card-body{
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.card-group{
+    height: auto;
+}
+
+#main-content{
+    padding-bottom: 70px;
+}
+
+.btn-primary{
+    padding: 1px;
+    width: 100%;
+    border: solid 2px black;
+}
+
+#skill-row-one{
+    margin-bottom: 3em;
+}

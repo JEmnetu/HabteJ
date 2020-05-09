@@ -18,6 +18,10 @@ footer{
     text-align: center;
 }
 
+footer span{
+    padding: 10px 10px;
+}
+
 #brand{
     font-size: 1.5em;
     margin-left: 2em;
@@ -115,7 +119,7 @@ a:hover{
 }
 
 .card-body{
-    height: 250px;
+    height: auto;
     overflow-y: scroll;
 }
 
@@ -135,4 +139,16 @@ a:hover{
 
 #skill-row-one{
     margin-bottom: 3em;
+}
+
+#social-media a:hover{
+    background-color: cornflowerblue;
+    color: white;
+    padding:5px
+}
+
+footer a:hover{
+    background-color: cornflowerblue;
+    color: black;
+    padding: 10px 20px;
 }

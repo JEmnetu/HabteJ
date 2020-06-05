@@ -1,197 +1,262 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="images/computer-icon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="images/computer-icon.png" />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="nav" id="Navbar">
-         <span id="brand">HabteJ</span>
+      <span id="brand">HabteJ</span>
     </header>
 
     <div class="container" id="main-content">
-        <section id="About">
-            <div id="img-wrapper" class="d-flex justify-content-center">
-                <img src="images/myPic.jpg" alt="profile-pic" id="myPic">
+      <section id="About">
+        <div id="img-wrapper" class="d-flex justify-content-center">
+          <img src="images/myPic.jpg" alt="profile-pic" id="myPic" />
+        </div>
+        <div id="text-box">
+          <h1>Jacob Habtemariam</h1>
+          <p>
+            Full Stack Web Developer from Reisterstown, Maryland. Completed the
+            Full Stack Coding Bootcamp at Johns Hopkins University focused on
+            the MERN Stack. I enjoy creating web applications and continue to
+            learn more about Software Development every day.
+          </p>
+
+          <div id="social-media">
+            <ul>
+              <a href="https://github.com/JEmnetu" target="_blank"
+                ><li>Github</li></a
+              >
+              <a
+                href="https://www.linkedin.com/in/habtemariamje/"
+                target="_blank"
+                ><li>LinkedIn</li></a
+              >
+              <a href="#Skills"><li>Skills</li></a>
+              <a href="#Projects"><li>Projects</li></a>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="Skills">
+        <h1>Skills</h1>
+        <div class="skills-wrapper">
+          <div class="row d-flex justify-content-center" id="skill-row-one">
+            <div class="col">
+              <ul>
+                <li class="list-title">Front End</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+                <li>Axios</li>
+              </ul>
             </div>
-            <div id="text-box">
-                <h1>Jacob Habtemariam</h1>
-                <p>Full Stack Web Developer from Reisterstown, Maryland.
-                    Completed the Full Stack Coding Bootcamp at Johns Hopkins University focused on the MERN Stack.
-                    I enjoy creating web applications and continue to learn more about Software Development every day.
+            <div class="col">
+              <ul>
+                <li class="list-title">Back End</li>
+                <li>Node JS</li>
+                <li>Python</li>
+                <li>REST APIs</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li class="list-title">Development</li>
+                <li>Responsive Web Development</li>
+                <li>Mobile First Development</li>
+                <li>Git</li>
+                <li>Agile Methodology</li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li class="list-title">Frameworks</li>
+                <li>React JS</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Projects">
+        <h1>Projects</h1>
+        <div class="projects-wrapper">
+          <div class="card-group">
+            <div class="card">
+              <a href="https://habtej-todo.netlify.app/" target="_blank"
+                ><img
+                  class="card-img-top"
+                  src="images/todoapp.png"
+                  alt="Card image cap"
+              /></a>
+              <div class="card-body mx-2">
+                <h5 class="card-title">HabteJ Todo App</h5>
+                <a href="https://github.com/JEmnetu/react-todo" target="_blank">
+                  <button class="btn btn-primary">Github Repo</button></a
+                >
+
+                <p class="card-text">
+                  A simple todo application created with React JS. This
+                  application allows the user to enter a list of todos in order
+                  to better organize their daily tasks. The user is able to mark
+                  todos as complete and remove them from their list. Todo data
+                  is persisted with local storage
                 </p>
-
-                <div id="social-media">
-                    <ul>
-                        <a href="https://github.com/JEmnetu" target="_blank"><li>Github</li></a>
-                        <a href="https://www.linkedin.com/in/habtemariamje/" target="_blank"><li>LinkedIn</li></a>
-                        <a href="#Skills"><li>Skills</li></a>
-                        <a href="#Projects"><li>Projects</li></a>
-                    </ul>
-                </div>
-
+              </div>
             </div>
-        </section>
+            <div class="card">
+              <a href="https://otm-online.firebaseapp.com/Login" target="_blank"
+                ><img
+                  class="card-img-top"
+                  src="images/otm.png"
+                  alt="Card image cap"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title">Off the Menu</h5>
+                <a href="https://gitlab.com/off-the-menu" target="_blank">
+                  <button class="btn btn-primary">Github Repo</button></a
+                >
 
-        <section id="Skills">
-            <h1>Skills</h1>
-            <div class="skills-wrapper ">
-                <div class="row d-flex justify-content-center"  id="skill-row-one">
-                    <div class="col">
-                        <ul>
-                            <li class="list-title">Front End</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>Javascript</li>
-                            <li>jQuery</li>
-                            <li>Axios</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li class="list-title">Back End</li>
-                            <li>Node JS</li>
-                            <li>Python</li>
-                            <li>REST APIs</li>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <ul>
-                            <li class="list-title">Development</li>
-                            <li>Responsive Web Development</li>
-                            <li>Mobile First Development</li>
-                            <li>Git</li>
-                            <li>Agile Methodology</li>
-
-
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li class="list-title">Frameworks</li>
-                            <li>React JS</li>
-                            <li>Bootstrap</li>
-                            <li>Tailwind CSS</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                
+                <p class="card-text">
+                  Full stack React application that allows users with food
+                  allergies to search local restaurant menus in order to find
+                  foods that are safe for them to eat. User allergens ar stored
+                  in a database and displayed on their profile page. The
+                  application features a Mongo + Express backend that serves to
+                  a React UI.
+                </p>
+              </div>
             </div>
+            <div class="card">
+              <a
+                href="https://jemnetu.github.io/Password-Generator/"
+                target="_blank"
+                ><img
+                  class="card-img-top"
+                  src="images/password.png"
+                  alt="Card image cap"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title">Password Generator</h5>
+                <a
+                  href="https://github.com/JEmnetu/Password-Generator"
+                  target="_blank"
+                >
+                  <button class="btn btn-primary">Github Repo</button></a
+                >
 
-        </section>
-        <section id="Projects">
-            <h1>Projects</h1>
-            <div class="projects-wrapper">
-                <div class="card-group">
-                    <div class="card ">
-                        <a href="http://stovetop.herokuapp.com/home" target="_blank"><img class="card-img-top" src="images/Stovetop.png" alt="Card image cap"></a>
-                        <div class="card-body mx-2">
-                            <h5 class="card-title">Stovetop</h5>
-                            <a href="https://github.com/JEmnetu/Stovetop" target="_blank"> <button class="btn btn-primary">Github Repo</button></a>
-
-                            <p class="card-text">
-                                JQuery based full stack application that allows users to create custom recipes.
-                                Recipes are stored in a MySQL database, which users can also use to query for and display recipes.
-                            </p>
-
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://otm-online.firebaseapp.com/Login" target="_blank"><img class="card-img-top" src="images/otm.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Off the Menu</h5>
-                            <a href="https://gitlab.com/off-the-menu" target="_blank"> <button class="btn btn-primary">Github Repo</button></a>
-
-                            <p class="card-text">
-                                Full stack React application that allows users with food allergies to search local
-                                restaurant menus in order to find foods that are safe for them to eat. User allergens ar
-                                stored in a database and displayed on their profile page. The application features
-                                a Mongo + Express backend that serves to a React UI.
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://jemnetu.github.io/Password-Generator/" target="_blank"><img class="card-img-top" src="images/password.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Password Generator</h5>
-                            <a href="https://github.com/JEmnetu/Password-Generator" target="_blank"> <button class="btn btn-primary">Github Repo</button></a>
-
-                            <p class="card-text">This application allows the user to created a randomlly generated password
-                            with their choice of uppercase and lowercase letters, numbers, and special characters. The application
-                                also enforces a minimum password length of 8 characters.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="card-group">
-                    <div class="card ">
-                        <a href="https://jhweather.netlify.app/" target="_blank"> <img class="card-img-top" src="images/Rweather.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Weather Application</h5>
-                            <a href="https://github.com/JEmnetu/react-weather-app" target="_blank"> <button class="btn btn-primary">Github Repo</button></a>
-
-                            <p class="card-text">
-                                Weather dashboard application built with React JS. This app allows the user to search the OpenWeather API
-                                for a city and display the city's current weather and 5 day forecast.
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://arcane-sands-29933.herokuapp.com/" target="_blank"><img class="card-img-top" src="images/noteapp.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Note Taker</h5>
-                            <a href="https://github.com/JEmnetu/Express-Note-Taker" target="_blank"> <button class="btn btn-primary">Github Repo</button></a>
-
-                            <p class="card-text">
-                                Simple CRUD application built with an Express JS backend. Allows users to create, save, and delete notes.
-                            </p>
-
-
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://JEmnetu.github.io/Day-Planner/" target="_blank"><img class="card-img-top" src="images/planner.png" alt="Card image cap"></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Day Planner</h5>
-                            <a href="https://github.com/JEmnetu/Day-Planner" target="_blank"> <button class="btn btn-primary">Github Repo</button></a>
-
-                            <p class="card-text">
-                                Day planner application that displays the current time and allows the user to enter and save events and todos.
-                                Provides the user with simple visual representation of their personal planner.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
+                <p class="card-text">
+                  This application allows the user to created a randomlly
+                  generated password with their choice of uppercase and
+                  lowercase letters, numbers, and special characters. The
+                  application also enforces a minimum password length of 8
+                  characters.
+                </p>
+              </div>
             </div>
+          </div>
+          <br />
+          <div class="card-group">
+            <div class="card">
+              <a href="https://jhweather.netlify.app/" target="_blank">
+                <img
+                  class="card-img-top"
+                  src="images/Rweather.png"
+                  alt="Card image cap"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title">Weather Application</h5>
+                <a
+                  href="https://github.com/JEmnetu/react-weather-app"
+                  target="_blank"
+                >
+                  <button class="btn btn-primary">Github Repo</button></a
+                >
 
+                <p class="card-text">
+                  Weather dashboard application built with React JS. This app
+                  allows the user to search the OpenWeather API for a city and
+                  display the city's current weather and 5 day forecast.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <a
+                href="https://arcane-sands-29933.herokuapp.com/"
+                target="_blank"
+                ><img
+                  class="card-img-top"
+                  src="images/noteapp.png"
+                  alt="Card image cap"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title">Note Taker</h5>
+                <a
+                  href="https://github.com/JEmnetu/Express-Note-Taker"
+                  target="_blank"
+                >
+                  <button class="btn btn-primary">Github Repo</button></a
+                >
 
-        </section>
+                <p class="card-text">
+                  Simple CRUD application built with an Express JS backend.
+                  Allows users to create, save, and delete notes.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <a href="https://JEmnetu.github.io/Day-Planner/" target="_blank"
+                ><img
+                  class="card-img-top"
+                  src="images/planner.png"
+                  alt="Card image cap"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title">Day Planner</h5>
+                <a
+                  href="https://github.com/JEmnetu/Day-Planner"
+                  target="_blank"
+                >
+                  <button class="btn btn-primary">Github Repo</button></a
+                >
 
+                <p class="card-text">
+                  Day planner application that displays the current time and
+                  allows the user to enter and save events and todos. Provides
+                  the user with simple visual representation of their personal
+                  planner.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <footer class="footer">
-       <a href="#Navbar"><span>Home</span></a>
+      <a href="#Navbar"><span>Home</span></a>
     </footer>
-
-</body>
+  </body>
 </html>

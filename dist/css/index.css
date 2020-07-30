@@ -1,96 +1,90 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    line-height: 25px;
-    font-family: Avenir;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+  font-family: Avenir;
+  background: black;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
 
-footer{
-    position: fixed;
-    bottom: 0;
-    height: 50px;
-
-    padding: 10px;
-    background: black;
-    color: white;
-    width: 100vw;
-    text-align: center;
+  padding: 10px;
+  background: black;
+  color: white;
+  width: 100vw;
+  text-align: center;
 }
 
-footer span{
-    padding: 10px 10px;
+footer span {
+  padding: 10px 10px;
 }
 
-#brand{
-    font-size: 1.5em;
-    margin-left: 2em;
+#brand {
+  font-size: 1.5em;
+  margin-left: 2em;
 }
 
-#myPic{
-    height: 200px;
-    width: 250px;
-    border-radius:8em;
+#myPic {
+  height: 200px;
+  width: 250px;
+  border-radius: 8em;
 }
 
-#img-wrapper{
-    margin-top: 2em;
-    margin-bottom: 6em;
+#img-wrapper {
+  margin-top: 2em;
+  margin-bottom: 6em;
 }
 
-#About{
-height: 100vh;
+#About {
+  height: 90vh;
 }
 
-#Skills{
-    height: 100vh;
+#Skills {
+  height: 100vh;
 }
-.skills-wrapper{
-    /*height: 50%;*/
-    padding-top: 7em;
-}
-
-.projects-wrapper{
-    padding-top: 0em;
-
+.skills-wrapper {
+  /*height: 50%;*/
+  padding-top: 7em;
 }
 
-.list-title{
-    font-weight: bold;
-    list-style: none;
-    text-decoration: underline;
+.projects-wrapper {
+  padding-top: 0em;
 }
 
-#Projects{
-height: auto;
+.list-title {
+  font-weight: bold;
+  list-style: none;
+  text-decoration: underline;
 }
 
-#social-media ul{
-list-style: none;
-    text-align: center;
+#Projects {
+  height: auto;
 }
 
-#social-media li{
-    display: inline-block;
-    list-style: none;
-   margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 25px;
+#social-media ul {
+  list-style: none;
+  text-align: center;
 }
 
-.card li{
-    display: inline-block;
-
+#social-media li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
 }
 
-.card ul{
-    list-style: none;
-
+/* .card li {
+  display: inline-block;
 }
 
-
-
-
+.card ul {
+  list-style: none;
+} */
 
 /*.nav{*/
 /*    background: cornflowerblue;*/
@@ -98,57 +92,82 @@ list-style: none;
 /*    padding: 20px;*/
 /*    */
 /*}*/
-header{
-    background-color: cornflowerblue;
-    padding: 20px;
-    height: auto;
-    box-sizing: border-box;
-    /*position: sticky;*/
-    /*top: 0;*/
-
+header {
+  background-color: #6495ed;
+  padding: 20px;
+  height: auto;
+  box-sizing: border-box;
+  /*position: sticky;*/
+  /*top: 0;*/
 }
 
-a:hover{
-    text-decoration: none;
+a:hover {
+  text-decoration: none;
 }
 
-.card img{
-    height: 300px;
-    width: 100%;
-    border: 1px solid black;
+#main-content {
+  padding-bottom: 70px;
 }
 
-.card-body{
-    height: auto;
-    overflow-y: scroll;
+.btn-primary {
+  padding: 1px;
+  width: 100%;
+  border: solid 2px black;
 }
 
-.card-group{
-    height: auto;
+#skill-row-one {
+  margin-bottom: 3em;
 }
 
-#main-content{
-    padding-bottom: 70px;
+#social-media a:hover {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 5px;
 }
 
-.btn-primary{
-    padding: 1px;
-    width: 100%;
-    border: solid 2px black;
+footer a:hover {
+  background-color: cornflowerblue;
+  color: black;
+  padding: 10px 20px;
 }
 
-#skill-row-one{
-    margin-bottom: 3em;
+.project-wrapper {
+  display: flex;
+  width: auto;
+  position: relative;
+}
+.project-description {
+  margin-left: 1.4em;
+  width: auto;
+}
+.project-img {
+  height: 200px;
+  width: 250px;
+  border: solid 1px black;
+  border-radius: 3px;
 }
 
-#social-media a:hover{
-    background-color: cornflowerblue;
-    color: white;
-    padding:5px
+.list-group-item {
+  margin-bottom: 2em;
+  width: auto;
+  box-shadow: -1px 1px 8px black;
+  background-color: cornflowerblue;
 }
 
-footer a:hover{
-    background-color: cornflowerblue;
-    color: black;
-    padding: 10px 20px;
+.list-group {
+  border: none;
+  margin-bottom: 1em;
+}
+
+.project-btn {
+  background-color: black;
+  color: cornflowerblue;
+  /* margin-top: 1em; */
+  position: absolute;
+  bottom: 3px;
+}
+
+.project-btn:hover {
+  color: cornflowerblue;
+  opacity: 0.85;
 }

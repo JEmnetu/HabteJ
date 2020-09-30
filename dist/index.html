@@ -26,6 +26,11 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Red+Rose:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" href="images/computer-icon.png" />
     <title>Portfolio</title>
@@ -61,79 +66,136 @@
               >
               <a href="#Skills"><li>Skills</li></a>
               <a href="#Projects"><li>Projects</li></a>
+              <!-- <a href="./resume.pdf" target="_blank"><li>Resume</li></a> -->
             </ul>
           </div>
         </div>
       </section>
 
-      <section id="Skills">
-        <h1>Skills</h1>
-        <div class="skills-wrapper">
-          <div class="row d-flex justify-content-center" id="skill-row-one">
-            <div class="col">
-              <ul>
-                <li class="list-title">Front End</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript</li>
-                <li>jQuery</li>
-                <li>Axios</li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li class="list-title">Back End</li>
-                <li>Node JS</li>
-                <li>Python</li>
-                <li>REST APIs</li>
-                <li>MySQL</li>
-                <li>MongoDB</li>
-              </ul>
-            </div>
+      <section id="Skills" class="container">
+        <h1 class="section-heading">Skills</h1>
+        <div class="row skill-row d-flex align-items-center mb-5 mt-3">
+          <div class="col-md-6">
+            <img class="skillImg ml-5" src="./images/FE.png" alt="Front-End-Logo" />
           </div>
-
-          <div class="row">
-            <div class="col">
-              <ul>
-                <li class="list-title">Development</li>
-                <li>Responsive Web Development</li>
-                <li>Mobile First Development</li>
-                <li>Git</li>
-                <li>Agile Methodology</li>
-              </ul>
-            </div>
-            <div class="col">
-              <ul>
-                <li class="list-title">Frameworks</li>
-                <li>React JS</li>
-                <li>Bootstrap</li>
-                <li>Tailwind CSS</li>
-              </ul>
-            </div>
+          <div class="col-md-4 ml-5">
+            <h3>Front End</h3>
+            <ul>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>Bootstrap</li>
+          
+              <li>Javascript</li>
+              <li>jQuery</li>
+              <li>React</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row skill-row d-flex align-items-center">
+          <div class="col-md-6">
+            <img class="skillImg ml-5" src="./images/BE.png" alt="Front-End-Logo" />
+          </div>
+          <div class="col-md-4 ml-5">
+            <h3>Back End</h3>
+            <ul>
+              <li>Node JS</li>
+              <li>Express</li>
+              <li>Python</li>
+              <li>REST APIs</li>
+              <li>GraphQL</li>
+              <li>MongoDB</li>
+              <li>AWS Amplify</li>
+            </ul>
           </div>
         </div>
       </section>
       <section id="Projects">
-        <h1>Projects</h1>
+        <h1 class="section-heading">Projects</h1>
 
         <ul class="list-group">
+  
+
           <li class="list-group-item">
-            <div class="project-wrapper">
-              <a href="https://habtej-bookshelf.herokuapp.com/" target="_blank"
-                ><img
-                  src="images/searchpage.png"
-                  alt="Card image cap"
-                  class="project-img"
-              /></a>
-              <div class="project-description">
-                <h2>Bookshelf</h2>
-                <p>
+            <div class="project-wrapper row">
+              <div class="col-md-4">
+                <a
+                  href="https://habtej-bookshelf.herokuapp.com/"
+                  target="_blank"
+                  ><img
+                    src="images/searchpage.png"
+                    alt="Card image cap"
+                    class="project-img"
+                /></a>
+              </div>
+              <div class="project-description col-md-6">
+                <h2>Google Bookshelf</h2>
+                <p class="description-wrapper">
                   Full Stack application made with React, Node JS, and MongoDB
                   that allows the user to search for books via the Google Books
                   API and save the books to their own collection.
                 </p>
                 <a
                   href="https://github.com/JEmnetu/myBookshelf"
+                  target="_blank"
+                >
+                  
+                  <button class="btn project-btn">
+                    Code Repo
+                  </button>
+                </a>
+              </div>
+            </div>
+          </li>
+         
+          <li class="list-group-item">
+            <div class="project-wrapper row">
+              <div class="col-md-4">
+                <a
+                  href="https://otm-online.firebaseapp.com/Login"
+                  target="_blank"
+                  ><img
+                    src="images/otm.png"
+                    alt="Card image cap"
+                    class="project-img"
+                /></a>
+              </div>
+              <div class="project-description col-md-6">
+                <h2>Off The Menu</h2>
+                <p class="description-wrapper">
+                  Full stack React application that allows users with food
+                  allergies to search local restaurant menus in order to find
+                  foods that are safe for them to eat. User allergens are stored
+                  in a database and displayed on their profile page. The
+                  application features a Mongo + Express backend that serves to
+                  a React frontend.
+                </p>
+                <a href="https://gitlab.com/off-the-menu/site" target="_blank">
+                  <button class="btn project-btn">
+                    Code Repo
+                  </button></a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="project-wrapper row">
+              <div class="col-md-4">
+                <a href="https://jhweather.netlify.app/" target="_blank"
+                  ><img
+                    src="images/Rweather.png"
+                    alt="Card image cap"
+                    class="project-img"
+                /></a>
+              </div>
+              <div class="project-description col-md-6">
+                <h2>Weather App</h2>
+                <p class="description-wrapper">
+                  Weather dashboard application built with React JS. This app
+                  allows the user to search the OpenWeather API for a city and
+                  display the city's current weather and 5 day forecast.
+                </p>
+                <a
+                  href="https://github.com/JEmnetu/react-weather-app"
                   target="_blank"
                 >
                   <button class="btn project-btn">
@@ -144,16 +206,18 @@
             </div>
           </li>
           <li class="list-group-item">
-            <div class="project-wrapper">
-              <a href="https://habtej-todo.netlify.app/" target="_blank"
-                ><img
-                  src="images/todoapp.png"
-                  alt="Card image cap"
-                  class="project-img"
-              /></a>
-              <div class="project-description">
+            <div class="project-wrapper row">
+              <div class="col-md-4">
+                <a href="https://habtej-todo.netlify.app/" target="_blank"
+                  ><img
+                    src="images/todoapp.png"
+                    alt="Card image cap"
+                    class="project-img"
+                /></a>
+              </div>
+              <div class="project-description col-md-6">
                 <h2>Todo Application</h2>
-                <p>
+                <p class="description-wrapper">
                   A simple todo application created with React JS. This
                   application allows the user to enter a list of todos in order
                   to better organize their daily tasks. The user is able to mark
@@ -174,48 +238,26 @@
             </div>
           </li>
           <li class="list-group-item">
-            <div class="project-wrapper">
-              <a href="https://otm-online.firebaseapp.com/Login" target="_blank"
+            <div class="project-wrapper row">
+              <div class="col-md-4">
+              <a
+                href="https://habtej-calculator.netlify.app"
+                target="_blank"
                 ><img
-                  src="images/otm.png"
+                  src="images/calc.png"
                   alt="Card image cap"
                   class="project-img"
               /></a>
-              <div class="project-description">
-                <h2>Off The Menu</h2>
-                <p>
-                  Full stack React application that allows users with food
-                  allergies to search local restaurant menus in order to find
-                  foods that are safe for them to eat. User allergens ar stored
-                  in a database and displayed on their profile page. The
-                  application features a Mongo + Express backend that serves to
-                  a React UI.
-                </p>
-                <a href="https://gitlab.com/off-the-menu/site" target="_blank">
-                  <button class="btn project-btn">
-                    Code Repo
-                  </button></a
-                >
               </div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="project-wrapper">
-              <a href="https://jhweather.netlify.app/" target="_blank"
-                ><img
-                  src="images/Rweather.png"
-                  alt="Card image cap"
-                  class="project-img"
-              /></a>
-              <div class="project-description">
-                <h2>Weather Application</h2>
-                <p>
-                  Weather dashboard application built with React JS. This app
-                  allows the user to search the OpenWeather API for a city and
-                  display the city's current weather and 5 day forecast.
+              <div class="project-description col-md-6">
+                <h2>Calculator</h2>
+                <p class="description-wrapper">
+                  Calculator application made with React and the MathJS library. 
+                  The calculator features a simple design and can complete
+                  the four basic mathematical operations.
                 </p>
                 <a
-                  href="https://github.com/JEmnetu/react-weather-app"
+                  href="https://github.com/JEmnetu/react-calculator"
                   target="_blank"
                 >
                   <button class="btn project-btn">
@@ -226,18 +268,21 @@
             </div>
           </li>
           <li class="list-group-item">
-            <div class="project-wrapper">
+            <div class="project-wrapper row">
+              <div class="col-md-4">
               <a href="https://passwordapp.netlify.app/" target="_blank"
                 ><img
                   src="images/password.png"
                   alt="Card image cap"
                   class="project-img"
               /></a>
-              <div class="project-description">
+              </a>
+              </div>
+              <div class="project-description col-md-6">
                 <h2>Password Generator</h2>
-                <p>
+                <p class="description-wrapper">
                   Jquery based web application that allows the user to create a
-                  random password with their choice of uppercase and lowercase
+                  random password with uppercase and lowercase
                   letters, numbers, and special characters. The application also
                   enforces minimum and maximum password length.
                 </p>
@@ -252,52 +297,33 @@
               </div>
             </div>
           </li>
-          <li class="list-group-item">
-            <div class="project-wrapper">
-              <a
-                href="https://arcane-sands-29933.herokuapp.com/"
-                target="_blank"
-                ><img
-                  src="images/noteapp.png"
-                  alt="Card image cap"
-                  class="project-img"
-              /></a>
-              <div class="project-description">
-                <h2>Note Application</h2>
-                <p>
-                  Simple CRUD application built with an Express JS backend.
-                  Allows users to create, save, and delete notes.
-                </p>
-                <a
-                  href="https://github.com/JEmnetu/Express-Note-Taker"
-                  target="_blank"
-                >
-                  <button class="btn project-btn">
-                    Code Repo
-                  </button>
-                </a>
-              </div>
-            </div>
-          </li>
+          
         </ul>
+      </section>
+    </div>
 
-        <!-- 
+    <footer class="footer">
+      <a href="#Navbar"><span >Home</span></a>
+    </footer>
+  </body>
+</html>
+<!-- 
           <div class="card-group">
            
             <div class="card">
               <a href="https://habtej-todo.netlify.app/" target="_blank"
                 ><img
-                  class="card-img-top"
-                  src="images/todoapp.png"
-                  alt="Card image cap"
-              /></a>
-              <div class="card-body mx-2">
-                <h5 class="card-title">Todo Application</h5>
-                <a href="https://github.com/JEmnetu/react-todo" target="_blank">
-                  <button class="btn btn-primary mb-3">Github Repo</button></a
-                >
-
-                <p class="card-text">
+                class="card-img-top"
+                src="images/todoapp.png"
+                alt="Card image cap"
+                /></a>
+                <div class="card-body mx-2">
+                  <h5 class="card-title">Todo Application</h5>
+                  <a href="https://github.com/JEmnetu/react-todo" target="_blank">
+                    <button class="btn btn-primary mb-3">Github Repo</button></a
+                    >
+                    
+                    <p class="card-text">
                   A simple todo application created with React JS. This
                   application allows the user to enter a list of todos in order
                   to better organize their daily tasks. The user is able to mark
@@ -396,7 +422,7 @@
                 >
                   <button class="btn btn-primary mb-3">Github Repo</button></a
                 >
-
+                
                 <p class="card-text">
                   Simple CRUD application built with an Express JS backend.
                   Allows users to create, save, and delete notes.
@@ -405,11 +431,3 @@
             </div>
           </div>
         </div> -->
-      </section>
-    </div>
-
-    <footer class="footer">
-      <a href="#Navbar"><span>Home</span></a>
-    </footer>
-  </body>
-</html>
